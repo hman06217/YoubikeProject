@@ -61,7 +61,7 @@ class Time:
         return f'T{self.hour:02}_{self.minute:02}_{self.second:02}'
 
 #主頁面
-topic1, topic2 = st.tabs(["站點資訊", "Kmeans分析"])
+topic1, topic2, topic3 = st.tabs(["站點資訊", '過去動態資訊', "Kmeans分析"])
 
 #站點資訊
 with topic1:
@@ -127,7 +127,7 @@ with topic1:
 		st.image(imageteach, width= 40)
 	with col4:
 		st.write('轉運車站')
-
+with topic2:
 	#第二張圖
 	st.write("""
 	# 過去站點租借率圖表 :bike:
@@ -166,7 +166,7 @@ with topic1:
 		video_bytes = video_file.read()
 		
 		st.video(video_bytes)
-with topic2:
+with topic3:
 	st.write("""
 	# YouBike站點Kmeans分析 〽️
 	
