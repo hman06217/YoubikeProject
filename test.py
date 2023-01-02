@@ -126,7 +126,7 @@ with topic1:
 	with col3:
 		st.image(imageteach, width= 40)
 	with col4:
-		st.write('轉運車站')
+		st.write('轉乘車站')
 with topic2:
 	#第二張圖
 	st.write("""
